@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crumbs of Love</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="language-switcher.js"></script>
+</head>
+<body>
+    <div class="container-tombol">
+        <div class="dropdown">
+            <button class="dropbtn" data-translate="language">Language</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="changeLanguage('en')">English</a>
+                <a href="#" onclick="changeLanguage('id')">Indonesia</a>
+            </div>
+        </div>
+        <div class="tombol-home">
+            <a href="#home" data-translate="home">Home</a> 
+            <a href="#catalog" data-translate="catalog">Catalog</a>
+            <a href="#about" data-translate="about">About</a>
+            <a href="#location" data-translate="location">Location</a>
+            <a href="#contact" data-translate="contact">Contacts</a>
+        </div>
+    </div>
+    <section id="home">
+        <div class="container">
+            <div class="home">
+                <h1 data-translate="title">Crumbs of Love</h1>
+                <p data-translate="description">Setiap remah membawa cerita, setiap gigitan penuh cinta.<br> Nikmati kelezatan kue-kue kami yang dibuat dengan hati, khusus untuk Anda.<br> Temukan kehangatan dan rasa manis dalam setiap momen bersama kami.</p>
+                <button class="catalog" data-translate="button_catalog">Cek Menu Kami</button>
+            </div>
+            <img src="cake-home.jpg" class="cake-home">
+        </div>
+    </section>
+    <section id="catalog">
+        <div class="catalog">
+            <h1 data-translate="catalog_heading">Temukan Kelezatan Favoritmu</h1>
+            <h2 data-translate="catalog_subheading">Kami menyajikan berbagai pilihan kue dan minuman yang dibuat dengan cinta</h2>
+        </div>
+        <div class="menu-wrapper">
+            <button class="scroll-btn left">&lt;</button>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="cupcake.jpg" alt="Cupcake">
+                    <h4 data-translate="menu_cupcake_title">Cupcake Vanila Klasik</h4>
+                    <p data-translate="menu_cupcake_description">Cupcake lembut dengan frosting vanila manis.</p>
+                    <span class="price" data-translate="menu_cupcake_price">Rp25.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="cheesecake.jpg" alt="Cheesecake">
+                    <h4 data-translate="menu_cheesecake_title">Cheesecake New York</h4>
+                    <p data-translate="menu_cheesecake_description">Kue keju klasik dengan topping buah segar.</p>
+                    <span class="price" data-translate="menu_cheesecake_price">Rp45.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="brownies.jpg" alt="Brownies">
+                    <h4 data-translate="menu_brownies_title">Choco Fudge Brownies</h4>
+                    <p data-translate="menu_brownies_description">Brownies cokelat dengan lapisan fudge yang lezat.</p>
+                    <span class="price" data-translate="menu_brownies_price">Rp30.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="macaron.jpg" alt="Macarons">
+                    <h4 data-translate="menu_macarons_title">Macarons Perancis</h4>
+                    <p data-translate="menu_macarons_description">Macarons lembut dengan berbagai rasa unik.</p>
+                    <span class="price" data-translate="menu_macarons_price">Rp35.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="tiramisue.jpg" alt="Tiramisu">
+                    <h4 data-translate="menu_tiramisu_title">Tiramisu Klasik</h4>
+                    <p data-translate="menu_tiramisu_description">Tiramisu klasik dengan lapisan mascarpone lembut.</p>
+                    <span class="price" data-translate="menu_tiramisu_price">Rp50.000</span>
+                </div>
+            </div>
+            <button class="scroll-btn right">&gt;</button>
+        </div>
+    </section>
+    <section id="About">
+        <div>
+            <p data-translate="about_text">Crumbs of Love hadir dari cinta kami terhadap kue dan kebahagiaan yang bisa dibagi melalui rasa manis.<br> Sejak 2023, kami berkomitmen untuk menciptakan kue dengan bahan terbaik dan cinta di setiap gigitan.</p>
+            <img src="cafe.jpg" class="cafe">
+        </div>
+    </section>
+    <section id="Location">
+        <div class="location-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.763212345678!2d115.2123456!3d-8.6565432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23456789abcdef%3A0x123456789abcdef!2sJl.%20Mawar%2C%20Denpasar%2C%20Bali!5e0!3m2!1sen!2sid!4v1697065641234!5m2!1sen!2sid"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+        </div>
+    </section>
+    <footer id="Contacts">
+        <div class="footer-contact">
+            <p data-translate="address">📍 Jl. Mawar No. 12, Denpasar, Bali</p>
+            <p data-translate="phone">📞 +62 812 3456 7890</p>
+            <p data-translate="email">📧 info@crumbsoflove.com</p>
+        </div>
+        <div class="footer-hours">
+            <p data-translate="hours_heading"><strong>Jam Operasional:</strong></p>
+            <p data-translate="weekdays">Senin - Jumat: 08.00 - 20.00</p>
+            <p data-translate="weekends">Sabtu - Minggu: 09.00 - 22.00</p>
+        </div>
+        <div class="footer-social">
+            <p data-translate="follow_us">Ikuti kami:</p>
+            <a href="https://www.instagram.com/crumbsoflove" target="_blank">Instagram</a> | 
+            <a href="https://www.facebook.com/crumbsoflove" target="_blank">Facebook</a> | 
+            <a href="https://www.tiktok.com/@crumbsoflove" target="_blank">TikTok</a>
+        </div>
+        <div class="footer-links">
+            <p>
+                <a href="#home" data-translate="home">Home</a> | 
+                <a href="#catalog" data-translate="catalog">Catalog</a> | 
+                <a href="#about" data-translate="about">About</a> | 
+                <a href="#location" data-translate="location">Location</a> | 
+                <a href="#contact" data-translate="contact">Contacts</a>
+            </p>
+        </div>
+        <div class="footer-copyright">
+            <p data-translate="rights">&copy; 2025 Crumbs of Love. Hak cipta dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
